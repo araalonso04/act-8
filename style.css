@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
 
-/* General Styles */
 body {
     font-family: 'Cormorant Garamond', serif;
     margin: 0;
@@ -43,6 +42,11 @@ body {
 .btn-secondary:hover {
     background-color: #84a59d;
     color: white;
+}
+
+/* Section Spacing */
+.hero, .venta, .novedades {
+    margin-bottom: 1cm;
 }
 
 /* Header */
@@ -276,4 +280,112 @@ header nav ul li a {
 .product-cell img {
     max-width: 50px;
     border-radius: 50%;
+}
+
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 800px;
+}
+
+.contact-form h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.form-row label {
+    font-size: 1.2em;
+    color: #333;
+    padding-top: 12px;
+    width: 180px;
+    flex-shrink: 0;
+    font-weight: 700;
+}
+
+.form-row input,
+.form-row textarea {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1em;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+
+.contact-form button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+    align-self: center;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon {
+    text-decoration: none;
+}
+
+.social-icon i {
+    font-size: 2.5em;
+    background-color: #000;
+    color: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover i {
+    background-color: #84a59d;
 }
