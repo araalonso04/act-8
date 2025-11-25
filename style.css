@@ -108,7 +108,7 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('./img/1.jpeg');
+    background-image: url('./img/portada.jpeg');
     background-size: cover;
     background-position: center;
     height: 400px;

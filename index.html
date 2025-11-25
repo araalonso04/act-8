@@ -14,11 +14,10 @@
             <h1>Aura of Silk</h1>
             <nav>
                 <ul>
-                    <li><button class="nav-btn">Limpiadores</button></li>
-                    <li><button class="nav-btn">Hidratantes</button></li>
-                    <li><button class="nav-btn">Protectores</button></li>
-                    <li><button class="nav-btn">Cuidado nocturno</button></li>
-                    <li><button class="nav-btn">Formulario de Productos</button></li>
+                    <li><a href="#Novedades" class="nav-btn">Novedades</a ></li>
+                    <li><a href="#Categoria" class="nav-btn">Categoria</a ></li>
+                    <li><a href="#Contactanos" class="nav-btn">Contactanos</a></li>
+                    <li><a href="#fromProductos" class="nav-btn">Formulario de Productos</a></li>
                 </ul>
             </nav>
             <div class="search-icon">
@@ -44,34 +43,35 @@
                 </div>
             
                 <div class="venta-image">
-                    <img src="./img/5.jpeg" alt="Venta de belleza">
+                    <img src="./img/portada2.jpeg" alt="Venta de belleza">
                 </div>
             </div>
         </section>
 
-        <section class="novedades">
+        <section id="Novedades" class="novedades">
             <div class="container">
                 <h2>Novedades</h2>
-                <h3>Conoce nuestros últimos lanzamientos</h3>
-                <div class="product-grid">
+                <h3>Nuevos Productos</h3>
+                <div class="product-grid" id="muestraproductos">
                     <div class="product-card">
-                        <img src="./img/2.jpeg" alt="Producto 1">
+                        <img src="./img/hidratante.jpeg" alt="Producto 1">
                         <a href="#" class="btn-secondary">ver ahora</a>
                     </div>
                     <div class="product-card">
-                        <img src="./img/3.jpeg" alt="Producto 2">
+                        <img src="./img/suerofacial.jpeg" alt="Producto 2">
                         <a href="#" class="btn-secondary">ver ahora</a>
                     </div>
                     <div class="product-card">
-                        <img src="./img/4.jpeg" alt="Producto 3">
+                        <img src="./img/vitaminaC.jpeg" alt="Producto 3">
                         <a href="#" class="btn-secondary">ver ahora</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="product-list">
+        <section id="Categoria" class="product-list">
             <div class="container">
+                 <h2>Categoria</h2>
                 <div class="product-list-header">
                     <input type="text" placeholder="Buscar...">
                     <a href="#" class="btn">Añadir Producto</a>
@@ -84,25 +84,25 @@
                         <div class="header-cell">Precio</div>
                     </div>
                     <div class="product-row">
-                        <div class="product-cell"><img src="./img/6.jpeg" alt="Producto"></div>
+                        <div class="product-cell"><img src="./img/crema.jpeg" alt="Producto"></div>
                         <div class="product-cell">Crema Hidratante AquaBoost</div>
                         <div class="product-cell">Cremas Hidratantes</div>
                         <div class="product-cell">$25.00</div>
                     </div>
                     <div class="product-row">
-                        <div class="product-cell"><img src="./img/7.jpeg" alt="Producto"></div>
+                        <div class="product-cell"><img src="./img/limpiador.jpeg" alt="Producto"></div>
                         <div class="product-cell">Limpiador Facial de Té Verde</div>
                         <div class="product-cell">Limpiadores</div>
                         <div class="product-cell">$15.00</div>
                     </div>
                     <div class="product-row">
-                        <div class="product-cell"><img src="./img/8.jpeg" alt="Producto"></div>
+                        <div class="product-cell"><img src="./img/tonico.jpeg" alt="Producto"></div>
                         <div class="product-cell">Tónico de Agua de Rosas</div>
                         <div class="product-cell">Tónicos</div>
                         <div class="product-cell">$12.00</div>
                     </div>
                     <div class="product-row">
-                        <div class="product-cell"><img src="./img/9.jpeg" alt="Producto"></div>
+                        <div class="product-cell"><img src="./img/exfoliante.jpeg" alt="Producto"></div>
                         <div class="product-cell">Exfoliante Suave de Aloe Vera</div>
                         <div class="product-cell">Exfoliantes</div>
                         <div class="product-cell">$18.50</div>
@@ -111,7 +111,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="Contactanos">
         <div class="container footer-container">
             <div class="contact-form">
                 <h2>Contáctanos</h2>
@@ -119,7 +119,7 @@
                     <div class="forn-group">
                     </div>
                 </div>
-                <form>
+                <div>
                     <div class="form-row">
                         <label for="name">Nombre</label>
                         <input type="text" id="name" name="name">
@@ -132,14 +132,13 @@
                         <label for="message">Mensaje</label>
                         <textarea id="message" name="message" rows="4"></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
-                </form>
+                    <button id="enviar">Enviar</button>
+                </div>
             </div>
             <div class="social-links">
                 <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                
             </div>
         </div>
 
@@ -151,24 +150,25 @@
                     </div>
                 </div>
         <form>
-        <div class="form-row">
+        <div id="fromProductos" class="form-row">
                         <label for="nombre del producto">Nombre del producto</label>
-                        <input type="text" id="name" name="nombre del">
+                        <input type="text" id="nombre">
                     </div>
                     <div class="form-row">
                         <label for="categoria">Categoria</label>
-                        <input type="categoria" id="email" name="Categoria">
+                        <input type="categoria" id="categoria" name="Categoria">
                     </div>
                     <div class="form-row">
                         <label for="Precio">Precio</label>
-                        <input type="Precio" id="email" name="Precio">
+                        <input type="Precio" id="Precio" name="Precio">
                         
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button id="regristro">Enviar</button>
+                    
         </form>        
           
     </footer>
-    <script src="main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
 
